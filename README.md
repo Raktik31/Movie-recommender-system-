@@ -45,6 +45,7 @@ pandas, numpy, scikit-learn → Data handling and similarity calculation
 Streamlit → Web interface for easy interaction
 
 Requests → Fetch posters via TMDB API
+
 Developed by **Raktik Ghosh**
 
 
