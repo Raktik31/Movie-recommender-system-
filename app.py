@@ -24,7 +24,7 @@ def recommend(movie):
 
 st.header('🎬 Movie Recommender System')
 
-# load your pkl files
+
 movies = pickle.load(open('movie_list.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
 
@@ -36,10 +36,10 @@ selected_movie = st.selectbox(
 
 if st.button('Show Recommendation'):
     recommended_movie_names, recommended_movie_posters = recommend(selected_movie)
-    
-    # ✅ Use st.columns (not beta_columns)
+   
     cols = st.columns(5)
     for i in range(5):
         with cols[i]:
             st.text(recommended_movie_names[i])
             st.image(recommended_movie_posters[i])
+
